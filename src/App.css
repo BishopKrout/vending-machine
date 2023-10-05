@@ -1,38 +1,66 @@
-.App {
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9e9e9;
   text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Vending machine styles */
+.vending-machine {
+  background-color: #5c5c5c;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.vending-machine h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vending-machine ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vending-machine li {
+  margin: 10px;
+  display: inline-block;
+}
+
+.vending-machine a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Snack component styles */
+.snack {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.snack img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.snack h2 {
+  margin-top: 20px;
+}
+
+.snack a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
 }
